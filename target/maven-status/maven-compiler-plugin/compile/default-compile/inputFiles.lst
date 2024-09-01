@@ -1,0 +1,9 @@
+D:\ecommerce\src\main\java\com\ecommerce\ecommerce\controller\OrderController.java
+D:\ecommerce\src\main\java\com\ecommerce\ecommerce\controller\ProductController.java
+D:\ecommerce\src\main\java\com\ecommerce\ecommerce\EcommerceApplication.java
+D:\ecommerce\src\main\java\com\ecommerce\ecommerce\model\Order.java
+D:\ecommerce\src\main\java\com\ecommerce\ecommerce\model\Product.java
+D:\ecommerce\src\main\java\com\ecommerce\ecommerce\repository\OrderRepository.java
+D:\ecommerce\src\main\java\com\ecommerce\ecommerce\repository\ProductRepository.java
+D:\ecommerce\src\main\java\com\ecommerce\ecommerce\service\OrderService.java
+D:\ecommerce\src\main\java\com\ecommerce\ecommerce\service\ProductService.java
