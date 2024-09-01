@@ -21,13 +21,11 @@ public class Product {
     @ElementCollection
     private List<String> sizes;
 
-    private int quantity; // New field for quantity
+    private int quantity;
 
-    // Default constructor
     public Product() {
     }
 
-    // Parameterized constructor
     public Product(String title, String description, String image, double price, List<String> sizes, int quantity) {
         this.title = title;
         this.description = description;
@@ -36,8 +34,6 @@ public class Product {
         this.sizes = sizes;
         this.quantity = quantity;
     }
-
-    // Getters and Setters
 
     public Long getId() {
         return id;

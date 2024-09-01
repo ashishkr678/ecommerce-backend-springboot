@@ -20,10 +20,14 @@ public class OrderController {
     @PostMapping
     public ResponseEntity<Order> createOrder(@RequestBody Order order) {
         try {
+            System.out.println("Received order: " + order);
+
             Order createdOrder = orderService.createOrder(order);
+
             return ResponseEntity.status(HttpStatus.CREATED).body(createdOrder);
-        } catch (Exception e) {
-            e.printStackTrace();
+        } catch (IllegalArgumentException e) {
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, e.getMessage(), e);
+        } catch (RuntimeException e) {
             throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Error creating order", e);
         }
     }
